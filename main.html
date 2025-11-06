@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Navbar and Image Display</title>
+  <style>
+    /* Optional styling for better presentation */
+    nav {
+      background-color: #333;
+      padding: 10px;
+    }
 
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- ✅ Semantic Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ✅ Heading -->
+  <h2>3 random images</h2>
+
+  <!-- ✅ Images Section -->
+  <div class="image-container">
+    <img src="https://picsum.photos/id/123/200/300" alt="Random image">
+    <img src="https://picsum.photos/id/124/200/300" alt="Random image">
+    <img src="https://picsum.photos/id/125/200/300" alt="Random image">
+  </div>
 
 </body>
-
 </html>
